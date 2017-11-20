@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js", 
     "watch": "nodemon server.js",
-    "compile:sass": "node-sass -w scss/ -o css/ --output-style compressed", 
-    "dev": "npm-run-all --parallel watch compile:sass"
+    "compile:sass": "node-sass -w scss/ -o css/", 
+    "dev": "npm-run-all --parallel watch compile:sass", 
+    "kill": "taskkill /f /im node.exe"
   },
   "author": "",
   "license": "ISC",
