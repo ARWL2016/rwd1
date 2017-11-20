@@ -97,5 +97,19 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1 {
-  color: red; }
+/* BODY */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+/* HEADER */
+header {
+  background-color: #424e64;
+  color: #bbc2ca;
+  padding: 1rem 2%; }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 300; }
+  header h2 {
+    font-size: 1.05rem;
+    font-weight: 700; }
