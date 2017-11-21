@@ -1,0 +1,57 @@
+/* ------------------------- BODY ---------------------------- */
+body {
+  // '' not needed here
+  background-image: url(../images/polonez_car.png);
+}
+
+div#wrapper {
+  // at 16px - max size of 1280
+  max-width: 80rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px #000000;
+  // remove the texture
+  background-color: white;
+}
+
+/* ------------------------- NAVIGATION ---------------------------- */
+nav {
+  ul {
+    margin-left: $gutter;    
+  }
+  ul li {
+    width: auto;
+  }
+  ul li:first-child {
+    // use an opaque black to darken the underlying color
+    border-left: 1px solid rgba(0,0,0,0.3);
+  }
+  ul li:last-child {
+    border-right: 1px solid rgba(0,0,0,0.3);
+  }
+  ul li a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* ------------------------- MAIN ---------------------------- */
+main {
+    figure.photo {
+      width: 25% - $gutterdbl;
+      float: left;
+  }
+
+  div.blog article {
+    float: left; 
+    width: 33.333% - $gutterdbl;
+  }
+
+  div.blog article:nth-child(2n + 1) {
+    // cancel the medium clear styles (reset)
+    clear: none;
+  }
+
+  div.blog article:nth-child(3n + 1) {
+    // cancel the medium clear styles (reset)
+    clear: left;
+  }
+}
